@@ -1,0 +1,81 @@
+# mirr.OS Tanken Module v1.0.0
+# Copyright (C) 2016
+# Marco Roth <info@marco-roth.ch>, 2016
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mirr.OS Tanken Module V1.0\n"
+"POT-Creation-Date: 2016-05-07 11:02+0200\n"
+"PO-Revision-Date: 2016-11-17 20:20+0100\n"
+"Last-Translator: Marco Roth <info@marco-roth.ch>\n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "tanken_title"
+msgstr "petrol stations"
+
+msgid "tanken_description"
+msgstr "Shows you the cheapest petrol stations in your city"
+
+msgid "tanken_diesel"
+msgstr "Diesel"
+
+msgid "tanken_super_e5"
+msgstr "Super E5"
+
+msgid "tanken_super_e10"
+msgstr "Super E10"
+
+msgid "tanken_radius"
+msgstr "radius"
+
+msgid "tanken_sort"
+msgstr "Order station by:"
+
+msgid "tanken_fuel"
+msgstr "type of petrol:"
+
+msgid "tanken_place"
+msgstr "your city"
+
+msgid "tanken_price"
+msgstr "price"
+
+msgid "tanken_distance"
+msgstr "distance"
+
+msgid "tanken_key"
+msgstr "API-Key"
+
+msgid "tanken_api"
+msgstr "You can get your API-Key here:"
+
+msgid "tanken_save"
+msgstr "save"
+
+#~ msgid "tanken_ago"
+#~ msgstr "ago"
+
+#~ msgid "tanken_minute"
+#~ msgstr "minute"
+
+#~ msgid "tanken_minutes"
+#~ msgstr "minutes"
+
+#~ msgid "dummy_title"
+#~ msgstr "Dummy"
+
+#~ msgid "dummy_description"
+#~ msgstr "This is a dummy module."
+
+#~ msgid "dummy parameter"
+#~ msgstr "dummy parameter"
+
+#~ msgid "save"
+#~ msgstr "save"
