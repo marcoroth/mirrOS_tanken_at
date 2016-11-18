@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mirr.OS Tanken Module V1.0\n"
 "POT-Creation-Date: 2016-05-07 11:02+0200\n"
-"PO-Revision-Date: 2016-11-17 20:09+0100\n"
+"PO-Revision-Date: 2016-11-18 14:27+0100\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -52,6 +52,18 @@ msgstr "Distanz"
 
 msgid "tanken_key"
 msgstr "API-Key von Tankerkoenig.de"
+
+msgid "tanken_name_mode"
+msgstr "Darstellung der Tankstelle:"
+
+msgid "tanken_only_street"
+msgstr "Marke, Strasse"
+
+msgid "tanken_only_place"
+msgstr "Marke, Ort"
+
+msgid "tanken_street_place"
+msgstr "Marke, Strasse, Ort"
 
 msgid "tanken_api"
 msgstr "Den API-Key könnt Ihr hier beziehen:"

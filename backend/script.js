@@ -35,6 +35,7 @@ $('#tanken__edit').click(function() {
 	$.post('setConfigValueAjax.php', {'key' : 'tanken_sort', 'value' : $("#tanken_sort").val()});
 	$.post('setConfigValueAjax.php', {'key' : 'tanken_radius', 'value' : $("#tanken_radius").val()});
 	$.post('setConfigValueAjax.php', {'key' : 'tanken_place', 'value' : $("#autocomplete").val()});
+	$.post('setConfigValueAjax.php', {'key' : 'tanken_name_mode', 'value' : $("#tanken_name_mode").val()});
 
 	if (place_before != $("#autocomplete").val()) {
 		setValues();

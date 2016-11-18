@@ -2,6 +2,8 @@ $(document).ready(function () {
 	reloadGasStation();
 });
 
+var name_mode;
+
 function reloadGasStation() {
 
 	var url = "https://creativecommons.tankerkoenig.de/json/";
@@ -19,6 +21,7 @@ function reloadGasStation() {
 	var place = "<?php echo getConfigValue('tanken_place'); ?>";
 	var lat = "<?php echo getConfigValue('tanken_lat'); ?>";
 	var lng = "<?php echo getConfigValue('tanken_lng'); ?>";
+	name_mode = "<?php echo getConfigValue('tanken_name_mode'); ?>";
 
 	url = url + "list.php" + "?lat=" + lat + "&lng=" + lng + "&rad=" + radius + "&type=" + type + "&apikey=" + key + "&sort=" + sort;
 
@@ -34,11 +37,25 @@ function reloadGasStation() {
 							$("#gas_station_table").append("<tr></tr>");
 							$("#gas_station_table tr:last").append("<td>" + el.price.toString().substring(0, el.price.toString().length - 1).replace(".", ",") + "<sup>" + el.price.toString().slice(-1) + "</sup></td>");
 
-							if (el.houseNumber != null) {
-								$("#gas_station_table tr:last").append("<td>" + el.brand + ", " + el.street.toLowerCase() + " " + el.houseNumber + "</td>");
-							} else {
-								$("#gas_station_table tr:last").append("<td>" + el.brand + ", " + el.street.toLowerCase() + "</td>");
+							station_name = el.brand;
+							street = el.street.toLowerCase();
+							houseNumber = el.houseNumber;
+							place = el.place;
+
+							if (houseNumber != null) {
+								street = street + " " + houseNumber;
 							}
+
+							if (name_mode == "0" || name_mode == "2") {
+								station_name = station_name + ", " + street;
+							}
+
+							if (name_mode == "1" || name_mode == "2") {
+								station_name = station_name + ", " + place;
+							}
+
+							$("#gas_station_table tr:last").append("<td>" + station_name + "</td>");
+
 							if (el.isOpen == true) {
 								open = "check";
 							} else {
@@ -55,9 +72,9 @@ function reloadGasStation() {
 		}
 	});
 
-	// alle 10 Minuten aktualiseren
+	// alle 30 Minuten aktualiseren
 	window.setTimeout(function() {
 		reloadGasStation();
-	}, 60000);
+	}, 1800000);
 
 }

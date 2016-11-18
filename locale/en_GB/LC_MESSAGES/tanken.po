@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mirr.OS Tanken Module V1.0\n"
 "POT-Creation-Date: 2016-05-07 11:02+0200\n"
-"PO-Revision-Date: 2016-11-17 20:20+0100\n"
+"PO-Revision-Date: 2016-11-18 14:28+0100\n"
 "Last-Translator: Marco Roth <info@marco-roth.ch>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -52,6 +52,18 @@ msgstr "distance"
 
 msgid "tanken_key"
 msgstr "API-Key"
+
+msgid "tanken_name_mode"
+msgstr "Display mode:"
+
+msgid "tanken_only_street"
+msgstr "brand, street"
+
+msgid "tanken_only_place"
+msgstr "brand, place"
+
+msgid "tanken_street_place"
+msgstr "brand, street, place"
 
 msgid "tanken_api"
 msgstr "You can get your API-Key here:"
