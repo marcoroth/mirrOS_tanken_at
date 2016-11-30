@@ -30,18 +30,51 @@ function setValues(){
 }
 
 $('#tanken__edit').click(function() {
-	$.post('setConfigValueAjax.php', {'key' : 'tanken_fuel', 'value' : $("#tanken_fuel").val()});
-	$.post('setConfigValueAjax.php', {'key' : 'tanken_key', 'value' : $("#tanken_key").val()});
-	$.post('setConfigValueAjax.php', {'key' : 'tanken_sort', 'value' : $("#tanken_sort").val()});
-	$.post('setConfigValueAjax.php', {'key' : 'tanken_radius', 'value' : $("#tanken_radius").val()});
-	$.post('setConfigValueAjax.php', {'key' : 'tanken_place', 'value' : $("#autocomplete").val()});
-	$.post('setConfigValueAjax.php', {'key' : 'tanken_name_mode', 'value' : $("#tanken_name_mode").val()});
 
-	if (place_before != $("#autocomplete").val()) {
-		setValues();
-	}
+	tanken_fuel = $("#tanken_fuel").val();
+	tanken_key = $("#tanken_key").val();
+	tanken_sort = $("#tanken_sort").val();
+	tanken_radius = $("#tanken_radius").val();
+	tanken_name_mode = $("#tanken_name_mode").val();
+	tanken_lat = $("#tanken_lat").val();
+	tanken_lng = $("#tanken_lng").val();
 
-	$('#ok').show(30, function() {
-		$(this).hide('slow');
-	})
+	var url = "https://creativecommons.tankerkoenig.de/json/";
+	url = url + "list.php" + "?lat=" + tanken_lat + "&lng=" + tanken_lng + "&rad=" + tanken_radius + "&type=" + tanken_fuel + "&apikey=" + tanken_key + "&sort=" + tanken_sort;
+
+	$.get(url).done(function(data) {
+
+		console.log(data);
+
+		if (data.ok) {
+			$.post('setConfigValueAjax.php', {'key' : 'tanken_fuel', 'value' : tanken_fuel});
+			$.post('setConfigValueAjax.php', {'key' : 'tanken_key', 'value' : tanken_key});
+			$.post('setConfigValueAjax.php', {'key' : 'tanken_sort', 'value' : tanken_sort});
+			$.post('setConfigValueAjax.php', {'key' : 'tanken_radius', 'value' : tanken_radius});
+			$.post('setConfigValueAjax.php', {'key' : 'tanken_name_mode', 'value' : tanken_name_mode});
+			$.post('setConfigValueAjax.php', {'key': 'tanken_lat', 'value': tanken_lat});
+			$.post('setConfigValueAjax.php', {'key': 'tanken_lng', 'value': tanken_lng});
+			$.post('setConfigValueAjax.php', {'key': 'tanken_ok', 'value': true});
+
+			$('#ok').show(30, function() {
+				$(this).hide('slow');
+			});
+
+			$("#tanken_ok").text("Daten erfolgreich gespeichert");
+			$("#tanken_error").text("");
+
+		} else {
+			$('#error').show(30, function() {
+				$(this).hide('slow');
+			});
+
+			$("#tanken_ok").text("");
+			$("#tanken_error").text(data.message);
+			$.post('setConfigValueAjax.php', {'key': 'tanken_ok', 'value': data.message});
+
+
+		}
+	});
+
+
 });

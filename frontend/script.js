@@ -7,13 +7,7 @@ var name_mode;
 function reloadGasStation() {
 
 	var url = "https://creativecommons.tankerkoenig.de/json/";
-	var key = "15afa60d-99ea-de77-cc1e-46856002c403";
-	var sprit =  ['e5', 'e10', 'diesel', 'all'];
-	var type = sprit[2];
-	var radius = "3"; //km
-	var sort_av = ['price', 'dist'];
-	var sort = sort_av[0];
-
+	var ok = "<?php echo getConfigValue('tanken_ok'); ?>";
 	var key = "<?php echo getConfigValue('tanken_key'); ?>";
 	var type = "<?php echo getConfigValue('tanken_fuel'); ?>";
 	var sort = "<?php echo getConfigValue('tanken_sort'); ?>";
@@ -21,17 +15,20 @@ function reloadGasStation() {
 	var place = "<?php echo getConfigValue('tanken_place'); ?>";
 	var lat = "<?php echo getConfigValue('tanken_lat'); ?>";
 	var lng = "<?php echo getConfigValue('tanken_lng'); ?>";
-	name_mode = "<?php echo getConfigValue('tanken_name_mode'); ?>";
+	var name_mode = "<?php echo getConfigValue('tanken_name_mode'); ?>";
 
-	url = url + "list.php" + "?lat=" + lat + "&lng=" + lng + "&rad=" + radius + "&type=" + type + "&apikey=" + key + "&sort=" + sort;
+	if (ok == "true") {
+		url = url + "list.php" + "?lat=" + lat + "&lng=" + lng + "&rad=" + radius + "&type=" + type + "&apikey=" + key + "&sort=" + sort;
 
-	$.get(url).done(function(data){
-		$("#gas_station_table").empty();
+		$.get(url).done(function(data){
 
-		if (data.status != "error") {
-			$("#gas_station_sub_title").text(type + " - " + radius + " km <?php echo _('tanken_radius'); ?>");
-			if (data.status == "ok"){
-				i = 0;
+			if (data.ok) {
+				$("#gas_station_table").empty();
+
+				$("#gas_station_sub_title").text(type + " - " + radius + " km <?php echo _('tanken_radius'); ?>");
+
+				if (data.status == "ok"){
+					i = 0;
 					$.each(data.stations, function(index, el) {
 						if (i < 7){
 							$("#gas_station_table").append("<tr></tr>");
@@ -66,15 +63,21 @@ function reloadGasStation() {
 						}
 						i++;
 					});
-			}
-		} else {
-			$("#gas_station_table").append("Error: "+ data.message);
-		}
-	});
+				}
 
-	// alle 30 Minuten aktualiseren
-	window.setTimeout(function() {
-		reloadGasStation();
-	}, 1800000);
+			} else {
+				$.post('/config/setConfigValueAjax.php', {'key' : 'tanken_ok', 'value' : data.message});
+				location.reload();
+			}
+		});
+
+		// alle 30 Minuten aktualiseren
+		window.setTimeout(function() {
+			reloadGasStation();
+		}, 1800000);
+
+	} else {
+		$("#gas_station_table").append("Bitte überprüfe deine Einstellungen im Backend <br><br>Folgender Fehler ist aufgetreten:<br>" + ok);
+	}
 
 }
