@@ -43,6 +43,10 @@ function reloadGasStation() {
 								street = street + " " + houseNumber;
 							}
 
+							if (station_name == ""){
+								station_name = "No Name";
+							}
+
 							if (name_mode == "0" || name_mode == "2") {
 								station_name = station_name + ", " + street;
 							}
@@ -77,7 +81,7 @@ function reloadGasStation() {
 		}, 1800000);
 
 	} else {
-		$("#gas_station_table").append("Bitte überprüfe deine Einstellungen im Backend <br><br>Folgender Fehler ist aufgetreten:<br>" + ok);
+		$("#gas_station_table").append("<?php echo _('tanken_error'); ?>" + ok);
 	}
 
 }

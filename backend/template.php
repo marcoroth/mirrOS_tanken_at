@@ -45,11 +45,11 @@
 	<input id="autocomplete" placeholder="<?php echo _('tanken_place'); ?>" type="text" value="<?php echo $tanken_place; ?>"></input>
 </div> -->
 
-<h6>Latitude (LAT) (<a href="http://www.gps-coordinates.net/gps-coordinates-converter">Convert Coordinates</a>)</h6>
-<input type="number" id="tanken_lat" min="1" max="25" placeholder="Latitude (LAT)" value="<?php echo $tanken_lat; ?>"/>
+<h6>Latitude (LAT) (<a href="http://www.gps-coordinates.net/gps-coordinates-converter" target="_blank"><?php echo _('tanken_convert_coordinates'); ?></a>)</h6>
+<input type="text" id="tanken_lat" min="1" max="25" placeholder="47.55959860000001" value="<?php echo $tanken_lat; ?>"/>
 
-<h6>Longitude (LNG) (<a href="http://www.gps-coordinates.net/gps-coordinates-converter">Convert Coordinates</a>)</h6>
-<input type="number" id="tanken_lng" min="1" max="25" placeholder="Longitude (LNG)" value="<?php echo $tanken_lng; ?>"/>
+<h6>Longitude (LNG) (<a href="http://www.gps-coordinates.net/gps-coordinates-converter" target="_blank"><?php echo _('tanken_convert_coordinates'); ?></a>)</h6>
+<input type="text" id="tanken_lng" min="1" max="25" placeholder="7.588576099999955" value="<?php echo $tanken_lng; ?>"/>
 
 <h6><?php echo _('tanken_name_mode'); ?></h6>
 <select id="tanken_name_mode">

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mirr.OS Tanken Module V1.0\n"
 "POT-Creation-Date: 2016-05-07 11:02+0200\n"
-"PO-Revision-Date: 2016-11-18 14:28+0100\n"
+"PO-Revision-Date: 2016-12-01 23:18+0100\n"
 "Last-Translator: Marco Roth <info@marco-roth.ch>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -68,26 +68,11 @@ msgstr "brand, street, place"
 msgid "tanken_api"
 msgstr "You can get your API-Key here:"
 
+msgid "tanken_convert_coordinates"
+msgstr "Convert coordinates"
+
+msgid "tanken_error"
+msgstr "Please check your config in the settings area <br><br>This error occurred:<br>"
+
 msgid "tanken_save"
 msgstr "save"
-
-#~ msgid "tanken_ago"
-#~ msgstr "ago"
-
-#~ msgid "tanken_minute"
-#~ msgstr "minute"
-
-#~ msgid "tanken_minutes"
-#~ msgstr "minutes"
-
-#~ msgid "dummy_title"
-#~ msgstr "Dummy"
-
-#~ msgid "dummy_description"
-#~ msgstr "This is a dummy module."
-
-#~ msgid "dummy parameter"
-#~ msgstr "dummy parameter"
-
-#~ msgid "save"
-#~ msgstr "save"

@@ -44,8 +44,6 @@ $('#tanken__edit').click(function() {
 
 	$.get(url).done(function(data) {
 
-		console.log(data);
-
 		if (data.ok) {
 			$.post('setConfigValueAjax.php', {'key' : 'tanken_fuel', 'value' : tanken_fuel});
 			$.post('setConfigValueAjax.php', {'key' : 'tanken_key', 'value' : tanken_key});
@@ -55,6 +53,7 @@ $('#tanken__edit').click(function() {
 			$.post('setConfigValueAjax.php', {'key': 'tanken_lat', 'value': tanken_lat});
 			$.post('setConfigValueAjax.php', {'key': 'tanken_lng', 'value': tanken_lng});
 			$.post('setConfigValueAjax.php', {'key': 'tanken_ok', 'value': true});
+			$.post('setConfigValueAjax.php', {'key': 'reload', 'value': 1});
 
 			$('#ok').show(30, function() {
 				$(this).hide('slow');
@@ -71,10 +70,6 @@ $('#tanken__edit').click(function() {
 			$("#tanken_ok").text("");
 			$("#tanken_error").text(data.message);
 			$.post('setConfigValueAjax.php', {'key': 'tanken_ok', 'value': data.message});
-
-
 		}
 	});
-
-
 });
