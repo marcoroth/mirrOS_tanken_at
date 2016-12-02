@@ -43,7 +43,7 @@ function reloadGasStation() {
 								street = street + " " + houseNumber;
 							}
 
-							if (station_name == ""){
+							if (station_name == "" || station_name == "Null"){
 								station_name = "No Name";
 							}
 
