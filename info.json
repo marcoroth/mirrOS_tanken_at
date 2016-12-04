@@ -1,13 +1,13 @@
 {
 	"module": {
 		"name": "Tanken",
-		"version": "1.1.2",
+		"version": "1.1.3",
 		"description": "Zeigt die billigsten Tankstellen in deiner Umgebung an",
 		"module_url": "https://glancr.de/module/mobilitaet/tanken/",
-		"download_url": "https://api.glancr.de/update/moduleZips/tanken-1.1.2.zip",
+		"download_url": "https://api.glancr.de/update/moduleZips/tanken-1.1.3.zip",
 		"category": "mobilitaet",
 		"release_date": "2016-10-16",
-		"last_update": "2016-12-01"
+		"last_update": "2016-12-04"
 	},
 	"creator": {
 		"name": "Marco Roth",
