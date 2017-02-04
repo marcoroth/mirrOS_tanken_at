@@ -45,11 +45,11 @@ $('#tanken__edit').click(function() {
 	$.get(url).done(function(data) {
 
 		if (data.ok) {
-			$.post('setConfigValueAjax.php', {'key' : 'tanken_fuel', 'value' : tanken_fuel});
-			$.post('setConfigValueAjax.php', {'key' : 'tanken_key', 'value' : tanken_key});
-			$.post('setConfigValueAjax.php', {'key' : 'tanken_sort', 'value' : tanken_sort});
-			$.post('setConfigValueAjax.php', {'key' : 'tanken_radius', 'value' : tanken_radius});
-			$.post('setConfigValueAjax.php', {'key' : 'tanken_name_mode', 'value' : tanken_name_mode});
+			$.post('setConfigValueAjax.php', {'key': 'tanken_fuel', 'value': tanken_fuel});
+			$.post('setConfigValueAjax.php', {'key': 'tanken_key', 'value': tanken_key});
+			$.post('setConfigValueAjax.php', {'key': 'tanken_sort', 'value': tanken_sort});
+			$.post('setConfigValueAjax.php', {'key': 'tanken_radius', 'value': tanken_radius});
+			$.post('setConfigValueAjax.php', {'key': 'tanken_name_mode', 'value': tanken_name_mode});
 			$.post('setConfigValueAjax.php', {'key': 'tanken_lat', 'value': tanken_lat});
 			$.post('setConfigValueAjax.php', {'key': 'tanken_lng', 'value': tanken_lng});
 			$.post('setConfigValueAjax.php', {'key': 'tanken_ok', 'value': true});

@@ -62,7 +62,7 @@
 <div id="tanken_error" style="color:red"></div>
 <div id="tanken_ok" style="color:green"></div><br />
 
-<a href="/modules/tanken/assets/resetConfig.php">Reset Config</a><br /><br />
+<a href="/modules/tanken/assets/reset.php">Reset Config</a><br /><br />
 
 <div class="block__add" id="tanken__edit">
 	<button class="tanken__edit--button" href="#">
