@@ -6,79 +6,76 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mirr.OS Tanken Module V1.1.6\n"
 "POT-Creation-Date: 2016-05-07 11:02+0200\n"
-"PO-Revision-Date: 2017-02-26 00:59+0100\n"
+"PO-Revision-Date: 2017-12-28 20:19+0100\n"
 "Last-Translator: Marco Roth <info@marco-roth.ch>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.12\n"
+"X-Generator: Poedit 2.0.5\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "tanken_title"
-msgstr "petrol stations"
+msgid "tanken_at_title"
+msgstr "petrol stations (AT)"
 
-msgid "tanken_description"
+msgid "tanken_at_description"
 msgstr "Shows you the cheapest petrol stations in your city"
 
-msgid "tanken_diesel"
+msgid "tanken_at_diesel"
 msgstr "Diesel"
 
-msgid "tanken_super_e5"
-msgstr "Super E5"
+msgid "tanken_at_super"
+msgstr "Super 95"
 
-msgid "tanken_super_e10"
-msgstr "Super E10"
-
-msgid "tanken_radius"
+msgid "tanken_at_radius"
 msgstr "radius"
 
-msgid "tanken_sort"
+msgid "tanken_at_sort"
 msgstr "Order station by:"
 
-msgid "tanken_fuel"
+msgid "tanken_at_fuel"
 msgstr "type of petrol:"
 
-msgid "tanken_place"
+msgid "tanken_at_place"
 msgstr "your city"
 
-msgid "tanken_price"
+msgid "tanken_at_price"
 msgstr "price"
 
-msgid "tanken_distance"
+msgid "tanken_at_distance"
 msgstr "distance"
 
-msgid "tanken_key"
+msgid "tanken_at_key"
 msgstr "API-Key"
 
-msgid "tanken_name_mode"
+msgid "tanken_at_name_mode"
 msgstr "Display mode:"
 
-msgid "tanken_only_street"
+msgid "tanken_at_only_street"
 msgstr "brand, street"
 
-msgid "tanken_only_place"
+msgid "tanken_at_only_place"
 msgstr "brand, place"
 
-msgid "tanken_street_place"
+msgid "tanken_at_street_place"
 msgstr "brand, street, place"
 
-msgid "tanken_api"
+msgid "tanken_at_api"
 msgstr "You can get your API-Key here:"
 
-msgid "tanken_convert_coordinates"
+msgid "tanken_at_convert_coordinates"
 msgstr "Convert coordinates"
 
-msgid "tanken_error"
+msgid "tanken_at_error"
 msgstr "Please check your config in the settings area <br><br>This error occurred:<br>"
 
-msgid "tanken_reset_config"
+msgid "tanken_at_reset_config"
 msgstr "Reset config"
 
-msgid "tanken_reset_config_message"
+msgid "tanken_at_reset_config_message"
 msgstr "Are you sure you want to reset your Tanken config?"
 
-msgid "tanken_save"
+msgid "tanken_at_save"
 msgstr "save"

@@ -1,84 +1,81 @@
-# mirr.OS Tanken Module v1.1.6
+# mirr.OS Tanken Module v1.0.0
 # Copyright (C) 2017
 # Marco Roth <info@marco-roth.ch>, 2017
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: mirr.OS Tanken Module V1.1.6\n"
+"Project-Id-Version: mirr.OS Tanken Module V1.0.0\n"
 "POT-Creation-Date: 2016-05-07 11:02+0200\n"
-"PO-Revision-Date: 2017-02-26 00:30+0100\n"
+"PO-Revision-Date: 2017-12-28 20:19+0100\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.12\n"
+"X-Generator: Poedit 2.0.5\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Last-Translator: Marco Roth <info@marco-roth.ch>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Language: de_DE\n"
 
-msgid "tanken_title"
-msgstr "Tanken"
+msgid "tanken_at_title"
+msgstr "Tanken (AT)"
 
-msgid "tanken_description"
+msgid "tanken_at_description"
 msgstr "Zeigt die billigsten Tankstellen in deiner Umgebung an"
 
-msgid "tanken_diesel"
+msgid "tanken_at_diesel"
 msgstr "Diesel"
 
-msgid "tanken_super_e5"
-msgstr "Super E5"
+msgid "tanken_at_super"
+msgstr "Super 95"
 
-msgid "tanken_super_e10"
-msgstr "Super E10"
-
-msgid "tanken_radius"
+msgid "tanken_at_radius"
 msgstr "Umkreis"
 
-msgid "tanken_sort"
+msgid "tanken_at_sort"
 msgstr "Tankstellen sortieren nach:"
 
-msgid "tanken_fuel"
+msgid "tanken_at_fuel"
 msgstr "Bitte Benzinsorte auswählen:"
 
-msgid "tanken_place"
+msgid "tanken_at_place"
 msgstr "Ortschaft"
 
-msgid "tanken_price"
+msgid "tanken_at_price"
 msgstr "Preis"
 
-msgid "tanken_distance"
+msgid "tanken_at_distance"
 msgstr "Distanz"
 
-msgid "tanken_key"
+msgid "tanken_at_key"
 msgstr "API-Key von Tankerkoenig.de"
 
-msgid "tanken_name_mode"
+msgid "tanken_at_name_mode"
 msgstr "Darstellung der Tankstelle:"
 
-msgid "tanken_only_street"
+msgid "tanken_at_only_street"
 msgstr "Marke, Strasse"
 
-msgid "tanken_only_place"
+msgid "tanken_at_only_place"
 msgstr "Marke, Ort"
 
-msgid "tanken_street_place"
+msgid "tanken_at_street_place"
 msgstr "Marke, Strasse, Ort"
 
-msgid "tanken_api"
+msgid "tanken_at_api"
 msgstr "Den API-Key könnt Ihr hier beziehen:"
 
-msgid "tanken_convert_coordinates"
+msgid "tanken_at_convert_coordinates"
 msgstr "Adresse in Koordinaten umwandeln"
 
-msgid "tanken_error"
+msgid "tanken_at_error"
 msgstr "Bitte überprüfe deine Einstellungen im Backend <br><br>Folgender Fehler ist aufgetreten:<br>"
 
-msgid "tanken_reset_config"
+msgid "tanken_at_reset_config"
 msgstr "Einstellungen zurücksetzten"
 
-msgid "tanken_reset_config_message"
+msgid "tanken_at_reset_config_message"
 msgstr "Bist du sicher, dass du deine Tanken Einstellungen zurücksetzten möchtest?"
 
-msgid "tanken_save"
+msgid "tanken_at_save"
 msgstr "Speichern"

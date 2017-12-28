@@ -6,9 +6,9 @@
 
 	putenv("LANG=$language");
 	setlocale(LC_ALL, "$language.UTF-8");
-	bindtextdomain('tanken', GLANCR_ROOT ."/modules/tanken/locale");
-	textdomain('tanken');
-	bind_textdomain_codeset('tanken', 'UTF-8');
+	bindtextdomain('tanken_at', GLANCR_ROOT ."/modules/tanken_at/locale");
+	textdomain('tanken_at');
+	bind_textdomain_codeset('tanken_at', 'UTF-8');
 
 ?>
 
@@ -42,10 +42,10 @@
 			<div class="row">
 				<div class="small-12 columns">
 
-					<h3><?php echo _("tanken_title"); ?></h3>
+					<h3><?php echo _("tanken_at_title"); ?></h3>
 
 					<p>
-						<?php echo _("tanken_reset_config_message"); ?>
+						<?php echo _("tanken_at_reset_config_message"); ?>
 					</p><br /><br />
 
 					<a class="button expanded" href="/config/">No</a>
