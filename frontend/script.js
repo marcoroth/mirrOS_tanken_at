@@ -32,6 +32,11 @@ function reloadGasStation() {
 					$.each(data.stations, function(index, el) {
 						if (i < 7){
 							$("#gas_station_table").append("<tr></tr>");
+
+							if (el.price == null){
+								el.price = "-";
+							}
+
 							$("#gas_station_table tr:last").append("<td>" + el.price.toString().substring(0, el.price.toString().length - 1).replace(".", ",") + "<sup>" + el.price.toString().slice(-1) + "</sup></td>");
 
 							station_name = el.brand;
